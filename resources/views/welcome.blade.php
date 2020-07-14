@@ -206,11 +206,14 @@ $(document).ready(function() {
 		$dot.appendTo($('#testimonials-nav'));
 	}
 
+	let interval = setInterval(toggleTestimonial, 4000);
+
 	$('#testimonials-nav').on('click', 'button', function() {
 		toggleTestimonial($(this).index());
+		clearInterval(interval);
 	});
 
-	setInterval(toggleTestimonial, 4000);
+	
 });
 
 function toggleTestimonial(selected = null) {
