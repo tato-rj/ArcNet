@@ -1,4 +1,4 @@
-<div class="col-lg-4 col-md-4 col-10 mx-auto service-card" style="height: 300px">
+<div class="col-lg-4 col-md-4 col-12 service-card" style="height: 300px">
 	<div class="d-flex justify-content-between t-2 flex-column text-white h-100 p-5 service-front" style="z-index: 1; user-select: none;">
 		<div>
 			<i class="fas fa-{{$icon}} fa-3x"></i>
