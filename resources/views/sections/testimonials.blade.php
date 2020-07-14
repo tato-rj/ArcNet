@@ -15,7 +15,7 @@
 		</div>
 	</div>
 	<div class="text-center bg-primary py-6">
-		<div class="mt-5">
+		<div class="mt-5" style="margin-left: -56px">
 			@include('components.cta')
 		</div>
 	</div>

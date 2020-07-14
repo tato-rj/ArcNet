@@ -12,6 +12,7 @@
 		<div class="d-flex flex-column justify-content-center h-100">
 				<h4>{{$title}}</h4>
 				<p>{{$description ?? 'There anyone who loves or pursues nor desires to obtain pain of itself, bet it is pain, but because.'}}</p>
+				<a href="mailto:{{config('mail.from.address')}}" class="link-none"><i class="mr-2 fas fa-envelope"></i><strong>Contact us</strong></a>
 		</div>
 	</div>
 </div>

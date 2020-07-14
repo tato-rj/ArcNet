@@ -3,6 +3,15 @@
 @push('header')
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 <style type="text/css">
+.link-none {
+	color: inherit;
+}
+
+.link-none:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
 .mb-6 {
 	margin-bottom: 5rem !important;
 }

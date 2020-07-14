@@ -1,9 +1,9 @@
 <section id="why-us" class="mb-7">
 	<div class="container-fluid p-0">
-		<div class="row no-gutters">
+		<div class="row no-gutters bg-primary">
 			<div class="col-lg-6 col-12">
 				<img src="{{asset('images/office.jpg')}}" class="w-100">
-				<div class="row bg-primary text-white align-items-center py-5 no-gutters">
+				<div class="row text-white align-items-center py-5 no-gutters">
 					<div class="col-2 text-right">
 						<i class="fas fa-clipboard-check fa-4x"></i>
 					</div>
