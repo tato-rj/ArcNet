@@ -3,11 +3,13 @@
 		<div class="row no-gutters">
 			<div class="col-lg-6 col-12">
 				<img src="{{asset('images/office.jpg')}}" class="w-100">
-				<div class="bg-primary p-6 d-flex text-white align-items-center">
-					<div class="mr-5">
+				<div class="row bg-primary text-white align-items-center py-5 no-gutters">
+					<div class="col-2 text-right">
 						<i class="fas fa-clipboard-check fa-4x"></i>
 					</div>
-					<h4 class="highlight-bold m-0">It is a long established fact that a reader will be tracted by the readable content</h4>
+					<div class="col-10">
+						<h4 class="highlight-bold mb-0 mx-4">It is a long established fact that a reader will be tracted by the readable content</h4>
+					</div>
 				</div>
 			</div>
 			<div class="col-lg-6 col-12 p-6 bg-light">
