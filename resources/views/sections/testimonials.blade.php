@@ -1,7 +1,7 @@
 <section id="testimonials" class="mb-7">
 	<div class="container" style="margin-bottom: -80px">
 		<div class="row">
-			<div class="col-8 mx-auto shadow bg-white p-0">
+			<div class="col-lg-8 col-md-10 col-11 mx-auto shadow bg-white p-0">
 				<div>
 					@include('components.icon-square', ['icon' => 'quote-left', 'size' => 'lg'])
 				</div>
