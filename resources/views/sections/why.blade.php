@@ -12,11 +12,15 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 col-12 p-6 bg-light">
-				<div class="mb-5">
-					@include('components.section-title', ['section' => 'WHY CHOOSE US', 'title' => 'HR Solutions that Grow with Your Business'])
+			<div class="col-lg-6 col-12 py-6 bg-light">
+				<div class="row no-gutters">
+					<div class="col-10 mx-auto">
+						<div class="mb-5">
+							@include('components.section-title', ['section' => 'WHY CHOOSE US', 'title' => 'HR Solutions that Grow with Your Business'])
+						</div>
+						@include('components.accordion')
+					</div>
 				</div>
-				@include('components.accordion')
 			</div>
 		</div>
 	</div>
