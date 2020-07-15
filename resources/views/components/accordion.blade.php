@@ -7,7 +7,7 @@
 
 		<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#why-accordion">
 			<p class="card-body m-0">
-				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				ArcNet Innovation specializes in the construction industry. Our direct experience provides a unique perspective and approach to difficult talent needs and career advancement challenges within the construction industry. This means our construction recruiters will understand your needs, your industry, and your language – saving you time and reducing frustration. 
 			</p>
 		</div>
 	</div>
@@ -19,7 +19,7 @@
 
 		<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#why-accordion">
 			<p class="card-body m-0">
-				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				Our personal experience in the construction industry makes ArcNet the perfect recruiting option. We screen each candidate with targeted questions allowing us to find the perfect match for each career opportunity.
 			</p>
 		</div>
 	</div>
@@ -31,7 +31,7 @@
 
 		<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#why-accordion">
 			<p class="card-body m-0">
-				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				Our recent success in placing Construction Project Managers, Superintendents, Estimators, Accounting and Finance team members, is a testimonial to our commitment. We strive to make a positive impact within the construction business and are able to leverage our industry knowledge to do so.
 			</p>
 		</div>
 	</div>

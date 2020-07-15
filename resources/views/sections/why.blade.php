@@ -8,7 +8,7 @@
 						<i class="fas fa-clipboard-check fa-4x"></i>
 					</div>
 					<div class="col-10">
-						<h4 class="highlight-bold mb-0 mx-4">It is a long established fact that a reader will be tracted by the readable content</h4>
+						<h4 class="highlight-bold mb-0 mx-4">Construction recruiters that understand your needs, your industry, and your language</h4>
 					</div>
 				</div>
 			</div>
@@ -16,7 +16,9 @@
 				<div class="row no-gutters">
 					<div class="col-10 mx-auto">
 						<div class="mb-5">
-							@include('components.section-title', ['section' => 'WHY CHOOSE US', 'title' => 'HR Solutions that Grow with Your Business'])
+							@include('components.section-title', [
+								'section' => 'WHY CHOOSE US', 
+								'title' => 'Solutions that Grow Your Business'])
 						</div>
 						@include('components.accordion')
 					</div>

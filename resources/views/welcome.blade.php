@@ -192,13 +192,13 @@ $(document).ready(function() {
 			avatar: 'laura.jpg',
 			name: 'Laura Madsen',
 			location: 'Brooklyn, NY',
-			comment: 'There anyone who loves or pursues nor desires to obtain pain of itself, bet it is pain, but because occasionally can packages as their default all the Lorem Ipsum generators on the Internet tend to repeat predefined.'
+			comment: 'They helped me find my current job, with a company I admire. I couldn\'t be happier in this new position and I have to thank them for seeing the value in me.'
 		},
 		{
 			avatar: 'david.jpg',
 			name: 'David Chu',
 			location: 'New York, NY',
-			comment: 'There anyone who loves or pursues nor desires to obtain pain of itself, bet it is pain, but because occasionally can packages as their default all the Lorem Ipsum generators on the Internet tend to repeat predefined.'
+			comment: 'They knew exactly what I was looking for in a site super. When they introduce me to the first candidate, I knew he was the right person for the job.'
 		}
 	];
 

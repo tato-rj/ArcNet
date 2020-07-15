@@ -6,6 +6,6 @@
 	<div>
 		<h5 class="text-secondary m-0">Howard Blake</h5>
 		<p class="text-muted"><strong class="location">Long Island, NY</strong></p>
-		<p class="m-0 text-muted comment">There anyone who loves or pursues nor desires to obtain pain of itself, bet it is pain, but because occasionally can packages as their default all the Lorem Ipsum generators on the Internet tend to repeat predefined.</p>
+		<p class="m-0 text-muted comment">The team at ArcNet is open, honest, and informative in every discussion. They walked me through each process, kept me up to date on all issues and opportunities. It was a pleasure to work with them.</p>
 	</div>
 </div>
