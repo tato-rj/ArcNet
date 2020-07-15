@@ -3,6 +3,9 @@
 @push('header')
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 <style type="text/css">
+	*:focus {
+		outline: none;
+	}
 .link-none {
 	color: inherit;
 }
@@ -82,7 +85,7 @@
 	background-color: rgb(42,22,157) !important;
 }
 
-.bg-secondary {
+.bg-secondary, #top a:hover {
 	background-color: #f71634 !important;
 }
 
@@ -171,6 +174,8 @@ button:focus {
     @include('sections.why')
     @include('sections.testimonials')
     @include('sections.contact')
+
+	@include('components.button-up')	
 @endsection
 
 @push('scripts')
@@ -222,7 +227,52 @@ $(document).ready(function() {
 		clearInterval(interval);
 	});
 
+	$('a[href*="#"]')
+	  // Remove links that don't actually link to anything
+	  .not('[href="#"]')
+	  .not('[href="#0"]')
+	  .click(function(event) {
+	    // On-page links
+	    if (
+	      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+	      && 
+	      location.hostname == this.hostname
+	    ) {
+	      // Figure out element to scroll to
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	      // Does a scroll target exist?
+	      if (target.length) {
+	        // Only prevent default if animation is actually gonna happen
+	        event.preventDefault();
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 800, function() {
+	          // Callback after animation
+	          // Must change focus!
+	          var $target = $(target);
+	          $target.focus();
+	          if ($target.is(":focus")) { // Checking if the target was focused
+	            return false;
+	          } else {
+	            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+	            $target.focus(); // Set focus again
+	          };
+	        });
+	      }
+	    }
+	  });
 	
+});
+
+$(window).scroll(function() {
+	let scroll = $(document).scrollTop();
+
+	if (scroll > 500) {
+		$('#top').fadeIn();
+	} else {
+		$('#top').fadeOut('fast');
+	}
 });
 
 function toggleTestimonial(selected = null) {
