@@ -6,6 +6,7 @@
 	*:focus {
 		outline: none;
 	}
+	
 .link-none {
 	color: inherit;
 }
