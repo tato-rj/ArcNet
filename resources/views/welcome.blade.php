@@ -2,6 +2,10 @@
 
 @push('header')
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans&display=swap" rel="stylesheet">
 <style type="text/css">
 	*:focus {
 		outline: none;
@@ -14,6 +18,10 @@
 .link-none:hover {
 	text-decoration: none;
 	color: inherit;
+}
+
+ul.menu a {
+	font-size: 1.1rem;
 }
 
 .mb-6 {
@@ -58,14 +66,19 @@
 }
 
 .highlight-thin {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 6px;
 	font-weight: 400;
 }
 
 .highlight-bold {
-	font-family: 'Quicksand', sans-serif;
-	font-weight: 600;
+	font-family: 'Fjalla One', sans-serif;
+	letter-spacing: 1.2px;
+	/*font-weight: 600;*/
+}
+
+p, div, li a, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
 }
 
 .card button.collapsed, .btn-white {
