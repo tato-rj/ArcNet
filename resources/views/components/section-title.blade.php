@@ -1,2 +1,4 @@
-<div class="lead section-header highlight-thin mb-2">{{$section}}</div>
-<h1 class="section-title highlight-bold">{{$title}}</h1>
+<div class="text-{{$position}}">
+	<h6 class="opacity-6 text-uppercase">{{$subtitle}}</h6>
+	<h2 class="mb-4 font-weight-{{$bold ?? null}}">{{$title}}</h2>
+</div>

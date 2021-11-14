@@ -35268,6 +35268,28 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+$('.hamburger').click(function () {
+  $(this).toggleClass('is-active');
+});
+var $menu = $('nav.navbar');
+var headH = $('#home').height() / 4;
+$(window).scroll(function () {
+  var scrollTop = $(this).scrollTop();
+  console.log(headH);
+
+  if (scrollTop > headH) {
+    $menu.addClass('navbar-moved');
+    $menu.removeClass('navbar-parked');
+  } else {
+    $menu.addClass('navbar-parked');
+    $menu.removeClass('navbar-moved');
+  }
+});
+$('[check-target]').click(function () {
+  var $checkbox = $('#' + $(this).attr('check-target'));
+  $checkbox.prop('checked', !$checkbox.is(':checked'));
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -35310,8 +35332,8 @@ try {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/vagrant/code/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/vagrant/code/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/arthur/Desktop/Websites/ArcNet/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/arthur/Desktop/Websites/ArcNet/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
