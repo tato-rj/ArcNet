@@ -1,5 +1,5 @@
 <section id="home" class="mb-6 h-100vh position-relative">
-	<video autoplay muted loop>
+	<video autoplay muted loop playsinline>
 		<source src="{{asset('videos/skyline.mp4')}}" type="video/mp4">
 	</video>
 	<div class="bg-primary overlay"></div>
