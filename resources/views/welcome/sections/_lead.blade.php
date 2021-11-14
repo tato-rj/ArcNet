@@ -1,4 +1,4 @@
-<section id="home" class="mb-6 position-relative" style="height: 100vh">
+<section id="home" class="mb-6 position-relative home-lead" style="height: 100vh">
 	<video autoplay muted loop playsinline>
 		<source src="{{asset('videos/skyline.mp4')}}" type="video/mp4">
 	</video>
