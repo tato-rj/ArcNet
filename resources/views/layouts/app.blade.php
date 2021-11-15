@@ -93,6 +93,10 @@
         $('.modal-opportunity .modal-footer button').click(function() {
             window.location.href = $(this).attr('href');
         });
+
+        $('form[disable-on-submit]').on('submit', function() {
+            $(this).find('button[type="submit"]').prop('disabled', true);
+        });
         </script>
         @stack('scripts')
     </body>

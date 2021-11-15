@@ -1,8 +1,9 @@
 <section class="band container">
 	<div class="row">
 		<div class="col-lg-8 col-md-10 col-12 mx-auto">
-			<form method="POST" action="{{route('resume.store')}}" enctype="multipart/form-data">
+			<form method="POST" disable-on-submit action="{{route('resume.store')}}" enctype="multipart/form-data">
 				@csrf
+				@honeypot
 				@formlabel(['label' => 'Basic info'])
 				<div class="form-row form-group">
 				    <div class="col">

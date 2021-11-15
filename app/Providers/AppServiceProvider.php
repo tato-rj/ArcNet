@@ -35,6 +35,7 @@ class AppServiceProvider extends ServiceProvider
         \Blade::include('components.section-title', 'header');
         \Blade::include('components.form.label', 'formlabel');
         \Blade::include('components.form.checkbox');
+        \Blade::include('components.form.honeypot');
         \Blade::include('components.alert');
     }
 }

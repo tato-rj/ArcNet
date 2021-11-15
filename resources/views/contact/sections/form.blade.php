@@ -3,7 +3,7 @@
 		<div class="col-lg-8 col-md-10 col-12 mx-auto">
 			<form method="POST" action="{{route('contact')}}" enctype="multipart/form-data">
 				@csrf
-
+				@honeypot
 				@formlabel(['label' => 'Basic info'])
 				<div class="form-row form-group">
 				    <div class="col">

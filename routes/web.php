@@ -25,7 +25,7 @@ Route::prefix('contact')->name('contact')->group(function() {
 
     Route::get('', 'ContactController@create');
 
-    Route::post('', 'ContactController@submit');
+    Route::post('', 'ContactController@submit')->middleware(['honeypot']);
 
 });
 
@@ -35,6 +35,6 @@ Route::prefix('resume')->name('resume.')->group(function() {
 
     Route::get('{resume}/download', 'ResumeController@download')->name('download');
 
-    Route::post('', 'ResumeController@store')->name('store');
+    Route::post('', 'ResumeController@store')->middleware(['honeypot'])->name('store');
 
 });

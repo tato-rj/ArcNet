@@ -33,12 +33,13 @@ class ResumeController extends Controller
     public function store(Request $request)
     {
         $request->validate([
+            'location' => 'same:test',
             'first_name' => 'string|required',
             'last_name' => 'string|required',
             'email' => 'email|required',
             'resume' => 'mimes:pdf,doc,docx|required',
         ]);
-
+        
         $resume = Resume::create([
             'first_name' => $request->first_name,
             'last_name' => $request->last_name, 
