@@ -30,6 +30,6 @@ class ResumeSubmittedEmail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.user.resume');
+        return $this->subject('Thanks for reaching out!')->markdown('emails.user.resume');
     }
 }

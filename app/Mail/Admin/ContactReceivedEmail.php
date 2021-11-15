@@ -30,6 +30,6 @@ class ContactReceivedEmail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.admin.contact');
+        return $this->subject('Contact form received')->markdown('emails.admin.contact');
     }
 }

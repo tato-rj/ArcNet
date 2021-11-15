@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['name' => 'Submit my resume'])
 
 @push('header')
 

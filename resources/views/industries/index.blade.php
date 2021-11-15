@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['name' => 'Industries'])
 
 @push('header')
 {{-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet"> --}}

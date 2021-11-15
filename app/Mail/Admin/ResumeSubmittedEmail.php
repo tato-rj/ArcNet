@@ -31,7 +31,8 @@ class ResumeSubmittedEmail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.admin.resume')
+        return $this->subject('Resume received')
+                    ->markdown('emails.admin.resume')
                     ->attach($this->resume->file());
     }
 }

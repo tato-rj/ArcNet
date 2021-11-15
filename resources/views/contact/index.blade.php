@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['name' => 'Contact us'])
 
 @push('header')
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">

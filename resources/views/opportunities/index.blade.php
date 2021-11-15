@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['name' => 'Opportunities'])
 
 @push('header')
 @endpush
