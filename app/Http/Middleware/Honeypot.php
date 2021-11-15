@@ -15,7 +15,12 @@ class Honeypot
      */
     public function handle($request, Closure $next)
     {
-        if (! $request->has('honeypot') || ! empty($request->honeypot) || now()->timestamp - $request->filled_at <= 5)
+        $live = app()->environment() != 'testing';
+        $missingHoneypot = ! $request->has('honeypot');
+        $honeypotFilled = ! empty($request->honeypot);
+        $submittedTooFast = now()->timestamp - $request->filled_at <= 5;
+
+        if ($live && ($missingHoneypot || $honeypotFilled || $submittedTooFast))
             abort(406, 'Spam detected.');
 
         return $next($request);
