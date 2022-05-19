@@ -15,26 +15,26 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('', 'HomeController@index')->name('home');
 
-Route::get('opportunities', 'OpportunityController@index')->name('opportunities');
+// Route::get('opportunities', 'OpportunityController@index')->name('opportunities');
 
-Route::get('industries', 'IndustryController@index')->name('industries');
+// Route::get('industries', 'IndustryController@index')->name('industries');
 
-Route::get('about', 'HomeController@about')->name('about');
+// Route::get('about', 'HomeController@about')->name('about');
 
-Route::prefix('contact')->name('contact')->group(function() {
+// Route::prefix('contact')->name('contact')->group(function() {
 
-    Route::get('', 'ContactController@create');
+//     Route::get('', 'ContactController@create');
 
-    Route::post('', 'ContactController@submit')->middleware(['honeypot']);
+//     Route::post('', 'ContactController@submit')->middleware(['honeypot']);
 
-});
+// });
 
-Route::prefix('resume')->name('resume.')->group(function() {
+// Route::prefix('resume')->name('resume.')->group(function() {
 
-    Route::get('', 'ResumeController@submit')->name('submit');
+//     Route::get('', 'ResumeController@submit')->name('submit');
 
-    Route::get('{resume}/download', 'ResumeController@download')->name('download');
+//     Route::get('{resume}/download', 'ResumeController@download')->name('download');
 
-    Route::post('', 'ResumeController@store')->middleware(['honeypot'])->name('store');
+//     Route::post('', 'ResumeController@store')->middleware(['honeypot'])->name('store');
 
-});
+// });

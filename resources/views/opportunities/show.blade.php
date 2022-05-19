@@ -13,13 +13,13 @@
           <div class="mb-2">@fa(['icon' => 'map-marker-alt']){{$opportunity->location}}</div>
           <div class="mb-2">@fa(['icon' => 'briefcase']){{$opportunity->type}} position</div>
         </div>
-        <div class="lead p-2 mb-5" style="white-space: pre-wrap;">{{$opportunity->description}}</div>
+        <div class="p-2 mb-5" style="white-space: pre-wrap;">{{$opportunity->description}}</div>
 
         <div class="mb-5">
           <h5 class="font-weight-bold border-bottom border-1x pb-3 mb-4">Responsibilities include</h5>
           <ul>
             @foreach($opportunity->responsibilities as $responsibility)
-            <li class="lead mb-1">{{$responsibility}}</li>
+            <li class="mb-1">{{$responsibility}}</li>
             @endforeach
           </ul>
         </div>
@@ -28,7 +28,7 @@
           <h5 class="font-weight-bold border-bottom border-1x pb-3 mb-4">Qualifications include</h5>
           <ul>
             @foreach($opportunity->qualifications as $qualification)
-            <li class="lead mb-1">{{$qualification}}</li>
+            <li class="mb-1">{{$qualification}}</li>
             @endforeach
           </ul>
         </div>

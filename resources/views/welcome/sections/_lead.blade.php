@@ -1,22 +1,11 @@
-<section id="home" class="mb-6 position-relative home-lead" style="height: 100vh">
-	<video autoplay muted loop playsinline>
-		<source src="{{asset('videos/skyline.mp4')}}" type="video/mp4">
-	</video>
-	<div class="bg-primary overlay"></div>
+<section id="home" class="mb-6 position-relative home-lead bg-primary" style="height: 100vh">
+
 	<div class="container-fluid h-100">
-		<div class="content row h-100 align-items-end">
-			<div class="col-12 mx-auto pb-3 pl-4" style="z-index: 1">
-				<div class="text-white">
-					<div class="">
-						<h1><span style="font-weight: 700;">ARCNET</span>INNOVATION</h1>
-						<h3 class="opacity-6">Grow your business with us.</h3>
-						
-					</div>
-					<div>
-						{{-- @include('components.cta') --}}
-					</div>
-				</div>
+		<div class="content row h-100 align-items-center">
+			<div class="col-lg-10 col-md-10 col-12 mx-auto pl-4" style="z-index: 1">
+				<h1 class="text-white">Grow your business<br>with us.</h1>
 			</div>
 		</div>
 	</div>
+	{{-- <div id="particles-js" class="absolute-center w-100 h-100"></div> --}}
 </section>

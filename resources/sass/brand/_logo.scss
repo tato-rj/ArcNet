@@ -1,24 +1,19 @@
 .logo-container {
-	display: flex;
-	flex-align: center;
+	@extend .d-flex, .align-items-end;
 }
 
-.logo-container.logo-light {
-	div.square {
-		width: 21.4px; 
-		height: 21.4px; 
-		margin-right: 0.5rem;
-		&:not(:last-of-type) {@extend .bg-white;}
-		&:last-of-type {@extend .bg-secondary;}
+.logo-container {
+	div.dot {
+		@extend .bg-secondary, .rounded-pill;
+		width: 14.4px; 
+		height: 14.4px; 
+		margin-bottom: 0.72rem;
+		margin-left: 0.42rem;
 	}
 }
 
-.logo-container.logo-dark {
-	div.square {
-		width: 21.4px; 
-		height: 21.4px; 
-		margin-right: 0.5rem;
-		&:not(:last-of-type) {background: lightgrey;}
-		&:last-of-type {@extend .bg-secondary;}
+.logo-light {
+	.font-logo {
+		@extend .text-white;
 	}
 }

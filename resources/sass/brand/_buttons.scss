@@ -14,29 +14,29 @@
 
 .btn-primary {
 	color: white !important;
-	background-color: $brand-primary;
-	border-color: $brand-primary;
+	background-color: $brand-secondary;
+	border-color: $brand-secondary;
 	border-radius: $brand-corners !important;
 
 	&:hover {
 		color: white !important;
-		background-color: lighten($brand-primary, 8%);
-		border-color: lighten($brand-primary, 8%);
+		background-color: lighten($brand-secondary, 8%);
+		border-color: lighten($brand-secondary, 8%);
 	}
 
 	&:active {
-		background-color: lighten($brand-primary, 10%) !important;
-		border-color: lighten($brand-primary, 10%) !important;
+		background-color: lighten($brand-secondary, 10%) !important;
+		border-color: lighten($brand-secondary, 10%) !important;
 	}
 
 	&:focus {
-		background-color: lighten($brand-primary, 10%) !important;
-		border-color: lighten($brand-primary, 10%) !important;
+		background-color: lighten($brand-secondary, 10%) !important;
+		border-color: lighten($brand-secondary, 10%) !important;
 	}
 
 	&:disabled {
-		background-color: lighten($brand-primary, 16%) !important;
-		border-color: lighten($brand-primary, 16%) !important;
+		background-color: lighten($brand-secondary, 16%) !important;
+		border-color: lighten($brand-secondary, 16%) !important;
 	}
 }
 

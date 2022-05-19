@@ -26,78 +26,13 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=DM+Sans&family=Poppins:wght@400;800&display=swap" rel="stylesheet">
 
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-
-        <style type="text/css">
-            .form-control {
-                padding: 2rem 1.75rem;
-                font-size: inherit;
-                font-family: inherit;
-                font-family: inherit;
-            }
-#home .overlay {
-    opacity: .75!important;
-}
-
-#home video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.nav-item .nav-link {
-    color: white !important;
-    transition: 0.2s;
-}
-
-.nav-item:hover .nav-link, .nav-item.active .nav-link {
-    opacity: 0.7;
-}
-        </style>
         @stack('header')
     </head>
     <body>
-        @include('layouts.header')
-        
         @yield('content')
-
-        @include('layouts.footer')
-
-        @if($message = session('success'))
-        @alert([
-            'color' => 'green',
-            'message' => '<strong class="mr-2">Success |</strong>' . $message,
-            'dismissible' => true,
-            'floating' => 'top'])
-        @endif
-
-        @if($message = session('error') ?? $errors->first())
-        @alert([
-            'color' => 'red',
-            'message' => '<strong class="mr-2">Sorry |</strong>' . $message,
-            'dismissible' => true,
-            'floating' => 'top'])
-        @endif
-
-        <script src="{{ mix('js/app.js') }}"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
-
-        <script type="text/javascript">
-        $('.modal-opportunity .modal-footer button').click(function() {
-            window.location.href = $(this).attr('href');
-        });
-
-        $('form[disable-on-submit]').on('submit', function() {
-            $(this).find('button[type="submit"]').prop('disabled', true);
-        });
-        </script>
         @stack('scripts')
     </body>
 </html>
